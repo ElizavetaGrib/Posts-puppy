@@ -11,7 +11,8 @@ const PostsListItem = ({item}) => {
             contentContainerStyle={styles.postListItem}
             keyExtractor={(item) => item.id.toString()}
             data={item}
-            renderItem={({item}) => <ListItem item={item}/>}/>);
+            renderItem={({item}) => <ListItem item={item}/>}/>
+    );
 };
 
 

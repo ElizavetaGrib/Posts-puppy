@@ -9,17 +9,16 @@ import withPostsService from '../hoc/with-posts-service';
 import styles from './styles';
 
 const PostsLoader = ({show, loadPosts, postsService}) => {
-    const button = !show ? null :
-        <View style={styles.buttonWrapper}>
-            <Button color={styles.buttonColor.color}
-                    title='Woof'
-                    onPress={() => loadPosts(postsService)}/>
-        </View>;
-    return (
-        <>
-            {button}
-        </>
-    );
+    if (show) {
+        return (
+            <View style={styles.buttonWrapper}>
+                <Button color={styles.buttonColor.color}
+                        title='Woof'
+                        onPress={() => loadPosts(postsService)}/>
+            </View>
+        );
+    }
+    return null;
 };
 
 const mapDispatchToProps = (dispatch) => {

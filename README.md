@@ -16,5 +16,5 @@ React Native app for display a list of posts with cute puppy ^_^
  
 Run `npm start` and `expo` will help you in your next steps.
 
-##Enjoy it!
+## Enjoy it!
  

@@ -20,5 +20,7 @@ export default StyleSheet.create({
         color: textColor,
         marginBottom: 5,
     },
-    buttonColor: {color: buttonColor,},
+    buttonColor: {
+        color: buttonColor,
+    },
 });

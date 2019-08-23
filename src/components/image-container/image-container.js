@@ -7,7 +7,7 @@ const ImageContainer = ({onLoaded, ...props}) => {
     const onLoad = () => {
         Animated.timing(opacity, {
             toValue: 1,
-            duration: 1000,
+            duration: 2000,
         }).start(() => onLoaded(true));
     };
 
@@ -21,7 +21,7 @@ const ImageContainer = ({onLoaded, ...props}) => {
                 },
                 props.style,
             ]}/>
-    )
+    );
 
 };
 

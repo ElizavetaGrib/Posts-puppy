@@ -21,7 +21,7 @@ const PostsList = ({posts}) => {
                   onSnapToItem={(index) => setActiveSlide(index)}
                   renderItem={({item}) => {
                       return (
-                          <PostsListItem key={item} item={item}/>);
+                          <PostsListItem item={item}/>);
                   }}/>
         <Pagination
             containerStyle={styles.containerStyle}

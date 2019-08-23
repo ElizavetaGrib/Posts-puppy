@@ -1,10 +1,13 @@
 import {StyleSheet} from 'react-native';
 
+const color = '#283C0A';
 
 export default StyleSheet.create({
-    indicatorColor: {color: '#283C0A'},
+    indicatorColor: {
+        color,
+    },
     beforeMessage: {
-        color: '#283C0A',
+        color,
         fontSize: 20,
         fontStyle: 'italic',
         textAlign: 'center',

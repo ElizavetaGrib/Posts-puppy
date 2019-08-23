@@ -6,5 +6,7 @@ export default StyleSheet.create({
     buttonWrapper: {
         backgroundColor,
     },
-    buttonColor: {color: '#283C0A',},
+    buttonColor: {
+        color: '#283C0A',
+    },
 });

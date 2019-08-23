@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
+
 import {modalSwitcher} from '../../actions';
 
 import styles from './styles';
@@ -13,7 +14,8 @@ const ListItem = ({item, openModal}) => {
             <Text style={styles.listText}>{item.id}</Text>
             <Text style={styles.listText}
                   numberOfLines={1}>{item.title}</Text>
-        </TouchableOpacity>);
+        </TouchableOpacity>
+    );
 };
 
 const mapDispatchToProps = (dispatch) => {

@@ -1,4 +1,4 @@
-import {StyleSheet, Platform, Dimensions, StatusBar} from "react-native";
+import {StyleSheet, Platform, Dimensions, StatusBar} from 'react-native';
 
 const screenHeight = Dimensions.get('screen').height;
 const screenWidth = Dimensions.get('screen').width;
@@ -7,8 +7,8 @@ const backgroundColor = '#8C965A';
 
 export default StyleSheet.create({
     statusBar: {
-        paddingTop: statusbarHeight,
         backgroundColor,
+        paddingTop: statusbarHeight,
     },
     contentWrapper: {
         backgroundColor,
@@ -17,5 +17,5 @@ export default StyleSheet.create({
     imageContainer: {
         height: screenHeight * 0.6,
         width: screenWidth
-    }
+    },
 });
