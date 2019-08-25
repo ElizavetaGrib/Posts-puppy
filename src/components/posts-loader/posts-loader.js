@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Button} from 'react-native';
 import {connect} from 'react-redux';
+import {compose} from 'redux';
 
-import compose from '../../utils/compose';
 import {postsLoaded, loading} from '../../actions';
 import withPostsService from '../hoc/with-posts-service';
 
