@@ -2,7 +2,7 @@ const initialState = {
     loading: false,
     posts: [],
     modalON: false,
-    post: {id: '', title: '',},
+    post: undefined,
 };
 
 const reducer = (state = initialState, action) => {

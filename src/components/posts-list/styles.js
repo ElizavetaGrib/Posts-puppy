@@ -1,7 +1,12 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
 
+const colors = {
+    white: '#fff',
+    darkGreen: '#283C0A',
+};
+
 const screenWidth = Dimensions.get('screen').width;
-const backgroundColor = Platform.OS === 'ios' ? 'white' : '#283C0A';
+const backgroundColor = Platform.OS === 'ios' ? colors.white : colors.darkGreen;
 
 export default StyleSheet.create({
     slider: {
@@ -11,9 +16,6 @@ export default StyleSheet.create({
         width: screenWidth / 3,
     },
     dotStyle: {
-        marginHorizontal: 0,
-        width: 7,
-        height: 7,
         backgroundColor,
     },
     dotContainerStyle: {
@@ -22,7 +24,6 @@ export default StyleSheet.create({
     containerStyle: {
         width: screenWidth,
         paddingHorizontal: 0,
-        paddingTop: 0,
-        paddingBottom: 10,
+        paddingVertical: 5,
     },
 });

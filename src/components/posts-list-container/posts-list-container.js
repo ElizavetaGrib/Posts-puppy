@@ -1,6 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import {Text, ActivityIndicator} from 'react-native';
+import {connect} from 'react-redux';
 
 import PostsList from '../posts-list/posts-list';
 
@@ -14,10 +14,15 @@ const PostsListContainer = ({posts, loading}) => {
                                size='large'/>
         );
     } else if (posts.length) {
-        return (<PostsList/>);
+        return (
+            <PostsList/>
+        );
     }
-
-    return (<Text style={styles.beforeMessage}>Data will be loaded when puppy will say WOOF</Text>);
+    return (
+        <Text style={styles.beforeMessage}>
+            Data will be loaded when puppy will say WOOF
+        </Text>
+    );
 };
 
 const mapStateToProps = ({posts, loading}) => {

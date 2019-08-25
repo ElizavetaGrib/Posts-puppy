@@ -8,12 +8,15 @@ import styles from './styles';
 
 const ListItem = ({item, openModal}) => {
     return (
-        <TouchableOpacity
-            style={styles.listItem}
-            onPress={() => openModal(item)}>
-            <Text style={styles.listText}>{item.id}</Text>
+        <TouchableOpacity style={styles.listItem}
+                          onPress={() => openModal(item)}>
+            <Text style={styles.listText}>
+                {item.id}
+            </Text>
             <Text style={styles.listText}
-                  numberOfLines={1}>{item.title}</Text>
+                  numberOfLines={1}>
+                {item.title}
+            </Text>
         </TouchableOpacity>
     );
 };

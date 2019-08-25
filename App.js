@@ -19,13 +19,14 @@ export default function App() {
     return (
         <Provider store={store}>
             <PostsServiceProvider value={postsService}>
-                <StatusBar barStyle='light-content' backgroundColor={styles.statusBar.backgroundColor}/>
+                <StatusBar barStyle='light-content'
+                           backgroundColor={styles.statusBar.backgroundColor}/>
                 <View style={styles.statusBar}/>
                 <PopUp/>
                 <PostsLoader show={imageLoaded}/>
                 <View style={styles.contentWrapper}>
                     <ImageContainer style={styles.imageContainer}
-                                    source={require('./dog.jpg')}
+                                    source={require('./puppy.jpg')}
                                     resizeMode={'stretch'}
                                     onLoaded={setImageLoaded}/>
                     <PostsListContainer/>

@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@inteach/react-native-scroll-indicator": "0.0.5",
     "expo": "^34.0.1",
     "expo-cli": "^3.0.10",
     "react": "^16.8.3",

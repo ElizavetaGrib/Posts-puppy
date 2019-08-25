@@ -1,17 +1,22 @@
 import {Platform, StyleSheet} from 'react-native';
 
-const backgroundColor = Platform.OS === 'ios' ? 'white' : '#283C0A';
-const color = Platform.OS === 'ios' ? '#283C0A' : 'white';
+const colors = {
+    white: '#fff',
+    darkGreen: '#283C0A',
+};
+
+const itemColor = Platform.OS === 'ios' ? colors.white : colors.darkGreen;
+const textColor = Platform.OS === 'ios' ? colors.darkGreen : colors.white;
 
 export default StyleSheet.create({
     listItem: {
         paddingVertical: 30,
         paddingHorizontal: 3,
-        marginHorizontal: 2,
         borderRadius: 5,
-        backgroundColor,
+        marginHorizontal: 2,
+        backgroundColor: itemColor,
     },
     listText: {
-        color,
-    }
+        color: textColor,
+    },
 });

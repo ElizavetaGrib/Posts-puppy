@@ -1,12 +1,18 @@
 import {StyleSheet, Platform} from 'react-native';
 
-const backgroundColor = Platform.OS === 'ios' ? 'white' : '#8C965A';
+const colors = {
+    white: '#fff',
+    lightGreen: '#8C965A',
+    darkGreen: '#283C0A',
+};
+
+const buttonColor = Platform.OS === 'ios' ? colors.white : colors.lightGreen;
 
 export default StyleSheet.create({
     buttonWrapper: {
-        backgroundColor,
+        backgroundColor: buttonColor,
     },
     buttonColor: {
-        color: '#283C0A',
+        color: colors.darkGreen,
     },
 });

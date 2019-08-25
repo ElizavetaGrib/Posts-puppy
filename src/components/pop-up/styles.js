@@ -1,20 +1,27 @@
 import {StyleSheet, Platform} from 'react-native';
 
-const backgroundColor = Platform.OS === 'ios' ? 'white' : '#283C0A';
-const textColor = Platform.OS === 'ios' ? '#283C0A' : 'white';
-const buttonColor = Platform.OS === 'ios' ? '#283C0A' : '#8C965A';
+const colors = {
+    transparentWhite: '#fff80',
+    white: '#fff',
+    lightGreen: '#8C965A',
+    darkGreen: '#283C0A',
+};
+
+const formColor = Platform.OS === 'ios' ? colors.white : colors.darkGreen;
+const textColor = Platform.OS === 'ios' ? colors.darkGreen : colors.white;
+const buttonColor = Platform.OS === 'ios' ? colors.darkGreen : colors.lightGreen;
 
 export default StyleSheet.create({
     formWrapper: {
+        backgroundColor: colors.transparentWhite,
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
     },
     form: {
-        backgroundColor,
-        marginHorizontal: 5,
+        backgroundColor: formColor,
         padding: 10,
         borderRadius: 10,
+        marginHorizontal: 5,
     },
     textStyle: {
         color: textColor,

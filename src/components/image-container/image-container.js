@@ -12,17 +12,10 @@ const ImageContainer = ({onLoaded, ...props}) => {
     };
 
     return (
-        <Animated.Image
-            onLoad={onLoad}
-            {...props}
-            style={[
-                {
-                    opacity,
-                },
-                props.style,
-            ]}/>
+        <Animated.Image style={[props.style, {opacity}]}
+                        onLoad={onLoad}
+                        {...props}/>
     );
-
 };
 
 export default ImageContainer;

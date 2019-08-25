@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {connect} from 'react-redux';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
+import {connect} from 'react-redux';
 
 import PostsListItem from '../posts-list-item';
 
@@ -8,28 +8,25 @@ import styles from './styles';
 
 const PostsList = ({posts}) => {
     const [activeSlide, setActiveSlide] = useState(0);
-    return <>
-        <Carousel sliderWidth={styles.slider.width}
-                  itemWidth={styles.sliderItem.width}
-                  activeSlideAlignment={'start'}
-                  loop
-                  loopClonesPerSide={10}
-                  inactiveSlideOpacity={1}
-                  inactiveSlideScale={1}
-                  activeSlideOffset={activeSlide}
-                  data={posts}
-                  onSnapToItem={(index) => setActiveSlide(index)}
-                  renderItem={({item}) => {
-                      return (
-                          <PostsListItem item={item}/>);
-                  }}/>
-        <Pagination
-            containerStyle={styles.containerStyle}
-            dotContainerStyle={styles.dotContainerStyle}
-            dotStyle={styles.dotStyle}
-            dotsLength={posts.length}
-            activeDotIndex={activeSlide}/>
-    </>
+    return (
+        <>
+            <Carousel sliderWidth={styles.slider.width}
+                      itemWidth={styles.sliderItem.width}
+                      data={posts}
+                      renderItem={({item}) => <PostsListItem item={item}/>}
+                      activeSlideAlignment={'start'}
+                      loop
+                      loopClonesPerSide={10} inactiveSlideOpacity={1}
+                      inactiveSlideScale={1}
+                      activeSlideOffset={activeSlide}
+                      onSnapToItem={(index) => setActiveSlide(index)}/>
+            <Pagination containerStyle={styles.containerStyle}
+                        dotContainerStyle={styles.dotContainerStyle}
+                        dotStyle={styles.dotStyle}
+                        dotsLength={posts.length}
+                        activeDotIndex={activeSlide}/>
+        </>
+    );
 };
 
 const mapStateToProps = ({posts}) => {

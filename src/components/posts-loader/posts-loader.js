@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, View} from 'react-native';
+import {View, Button} from 'react-native';
 import {connect} from 'react-redux';
 
 import compose from '../../utils/compose';

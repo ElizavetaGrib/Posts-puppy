@@ -24,4 +24,4 @@ export default class ProductsService {
         return response.map(this._transformPost);
     };
 
-}
+};
