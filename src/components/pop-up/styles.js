@@ -1,7 +1,7 @@
 import {StyleSheet, Platform} from 'react-native';
 
 const colors = {
-    transparentWhite: '#fff80',
+    transparentWhite: '#ffffff80',
     white: '#fff',
     lightGreen: '#8C965A',
     darkGreen: '#283C0A',
