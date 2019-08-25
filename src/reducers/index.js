@@ -1,3 +1,5 @@
+import {actionTypes} from '../actions';
+
 const initialState = {
     loading: false,
     posts: [],
@@ -7,18 +9,18 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'POSTS_LOADED':
+        case actionTypes.POSTS_LOADED:
             return {
                 ...state,
                 posts: action.payload,
                 loading: false,
             };
-        case 'LOADING':
+        case actionTypes.LOADING:
             return {
                 ...state,
                 loading: true,
             };
-        case 'MODAL_SWITCHER':
+        case actionTypes.MODAL_SWITCHER:
             return {
                 ...state,
                 post: action.payload,
