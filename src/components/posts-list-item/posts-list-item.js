@@ -5,10 +5,10 @@ import ListItem from '../list-item';
 
 import styles from './styles';
 
-const PostsListItem = ({item}) => {
+const PostsListItem = ({items}) => {
     return (
         <FlatList contentContainerStyle={styles.postListItem}
-                  data={item}
+                  data={items}
                   renderItem={({item}) => <ListItem item={item}/>}
                   keyExtractor={(item) => item.id.toString()}/>
     );

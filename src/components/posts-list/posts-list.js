@@ -13,10 +13,11 @@ const PostsList = ({posts}) => {
             <Carousel sliderWidth={styles.slider.width}
                       itemWidth={styles.sliderItem.width}
                       data={posts}
-                      renderItem={({item}) => <PostsListItem item={item}/>}
+                      renderItem={({item}) => <PostsListItem items={item}/>}
                       activeSlideAlignment={'start'}
                       loop
-                      loopClonesPerSide={10} inactiveSlideOpacity={1}
+                      loopClonesPerSide={10}
+                      inactiveSlideOpacity={1}
                       inactiveSlideScale={1}
                       activeSlideOffset={activeSlide}
                       onSnapToItem={(index) => setActiveSlide(index)}/>
