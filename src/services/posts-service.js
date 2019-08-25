@@ -1,4 +1,4 @@
-export default class ProductsService {
+export default class PostsService {
 
     _apiUrl = 'https://jsonplaceholder.typicode.com/';
 
