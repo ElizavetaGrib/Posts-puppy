@@ -15,7 +15,7 @@ export default StyleSheet.create({
         flex: 1,
     },
     imageContainer: {
-        height: screenHeight * 0.6,
+        height: screenHeight * 3 / 5,
         width: screenWidth,
     },
 });
