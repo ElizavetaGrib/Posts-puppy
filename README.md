@@ -1,20 +1,24 @@
 # Posts-puppy
 
-React Native app for display a list of posts with cute puppy ^_^
+React Native app for displaying a list of posts with cute puppy ^_^
 
-## You may use 
+## Terms of reference
+
+To read terms of reference open `TOR.pdf`
+
+## How to use 
+
+### You may use 
 
 `expo-cli` to start this project and `Expo` application on your smartphone to open this project
 
 ### `npm install expo-cli`
 
-## To install dependencies you have to run 
+### To install dependencies you have to run 
 
 ### `npm install`
 
-## To start project
+### To start project
  
-Run `npm start` and `expo` will help you in your next steps.
-
-## Enjoy it!
+Run `npm start` or `expo start` and `Expo` will help you in your next steps.
  
